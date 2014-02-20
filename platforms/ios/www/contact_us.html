@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+            <!-- Bootstrap core CSS -->
+    	<link href="css/synergy.css" rel="stylesheet">
+    	<link href="css/bootstrap.css" rel="stylesheet">
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    	    <!-- ~~~~~~~~~~~~Jquery~~~~~~~~~~~~ -->
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSFyrYbGoSsHrxQBYrYcX8sb8Lf5O10RM&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var synergyLatlng = new google.maps.LatLng(28.579534, -81.294956);
+        var mapOptions = {
+          zoom: 8,
+          center: synergyLatlng
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+            
+         var marker = new google.maps.Marker({
+      position: synergyLatlng,map: map,title: 'Salsa Synergy'});
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+
+        <title>Contact Us</title>
+    </head>
+    
+    
+    <body class="synBg">
+     <div class="synBg navbar navbar-default navbar-fixed-top" style="border-color: transparent !important;" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="color:#047bc6 !important;">
+            <span class="sr-only" style="border-color:#047bc6 !important;">Toggle navigation</span>
+            <span class="icon-bar" style="border-color:#047bc6 !important;"></span>
+            <span class="icon-bar" style="border-color:#047bc6 !important;"></span>
+            <span class="icon-bar" style="border-color:#047bc6 !important;"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img class="logo" src='img/synergy_logo.png' /></a>
+        </div>
+        <div class="navbar-collapse collapse menuReset">
+          <ul class="nav navbar-nav menuListBg navMenuText">
+            <li class=""><a href="#" class="navMenuText">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="navMenuText dropdown-toggle" data-toggle="dropdown" >Classes <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="navMenuText">Descriptions and Videos</a></li>
+                                <li class="divider container"></li>
+                <li><a href="#" class="navMenuText">Syllabus Checklist</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="navMenuText dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="navMenuText">Who are we?</a></li>
+                                <li class="divider container"></li>
+                <li><a href="#" class="navMenuText">Synergy Dance Company</a></li>
+              </ul>
+            </li>
+             <li class=""><a href="#" class="navMenuText">Contact Us</a></li>
+            <li><a href="#contact" class="navMenuText">About Us</a></li>
+            <li class="dropdown">
+              <a href="#" class="navMenuText dropdown-toggle" data-toggle="dropdown">Synergy Videos <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="navMenuText">Class Videos and Moves</a></li>
+                                <li class="divider container"></li>
+                <li><a href="#" class="navMenuText">Dance Company Videos</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+     <div class="container" style="position:relative; top:150px;">
+        <div class="panel panel-primary">
+        	<div class="panel-heading">Studio Information</div>
+        	<div class="panel-body">
+        		<p> Salsa Synergy Dance Studio <br /> 2400 N.Forsyth Rd. Suite 201A<br/> Orlando, Fl 32807</p>
+        		<p> Frankie Cartagena <br /> 386-228-5625</p>
+        		<p> For more info visit: http://www.salsasynergy.com</p>
+        		<div id="map_canvas" style="min-width:200px; min-height:200px;">
+        			
+        		</div>
+        	</div>
+        </div>
+     	<form role="form">
+  			<div class="form-group">
+    			<label class="navMenuText txtTran"for="FirstName">First Name:</label>
+    			<input type="email" class="form-control" id="FirstName" placeholder="Enter Firstname">
+  			</div>
+  			<div class="form-group">
+    			<label class="navMenuText txtTran"for="LastName">Last Name:</label>
+    			<input type="email" class="form-control" id="LastName" placeholder="Enter Lastname">
+  			</div>
+  			<div class="form-group">
+    			<label class="navMenuText txtTran"for="EmailAddress">Email address:</label>
+    			<input type="email" class="form-control" id="Email" placeholder="Enter email">
+  			</div>
+  			<div class="form-group">
+  				<label class="navMenuText txtTran" for="Message">Message:</label>
+  				<textarea class="form-control" rows="3" ></textarea>
+  			</div>
+  			<div class="form-group">
+  				<button type="submit" class="btn btn-primary" style="border-radius:0px !important; text-align:center; width:100%;">Send</button>
+  			</div>
+  		</form>
+     
+     </div>   
+        <script src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();	
+        </script>
+        
+    </body>
+</html>

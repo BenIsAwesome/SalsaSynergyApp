@@ -24,20 +24,119 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+            <!-- Bootstrap core CSS -->
+    	<link href="css/synergy.css" rel="stylesheet">
+    	<link href="css/bootstrap.css" rel="stylesheet">
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    	    <!-- ~~~~~~~~~~~~Jquery~~~~~~~~~~~~ -->
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <title>Salsa Synergy Dance Studio</title>
     </head>
-    <body>
-        <div class="app">
+    
+    
+<body class="synBg">
+	<div class="logo"style="margin-bottom:20px;height:100px;"><img class="logo" src='img/synergy_logo.png' style="padding-top:10px;"/></div>
+    <div class="">
+    		<div class="" style="float:left;height:40px;width:40px;background:#047bc6;position:relative; top:10px;">
+         			<i class="fa fa-home" style="font-size:30px;color:#ffffff;padding-left:5px;padding-top:3px;"></i>
+         	</div>
+    		<h4 style="float:left;color:#ffffff;font-size:36px;margin-left:6px;text-transform:none;">Main Menu</h4>
+    		<div class="" style="float:right;height:40px;width:5px;background:#047bc6;position:relative; top:10px;"></div>
+    </div>
+    <!-- Main Menu Start-->
+    <div class="heightSpacer" style="min-height:50px;"></div>
+	<div class="menuParent" id="accordion">
+  		<div>   <!-- Classes Main Menu Section-->
+    		<div class=" mainMenuItems container">
+        		<a class="mainMenuList" data-toggle="collapse" data-parent="#accordion" href="#collapseClass">
+        		    <hr />
+           			<h4 class="">Classes <i class="fa fa-angle-double-right pull-right"></i>      </h4>
+        		</a>
+    		</div>
+    	<div id="collapseClass" class=" collapse in "> 
+      		<div class="panel-body menuListBg">
+      			<div class="container">
+        		<a class="mainMenuList " data-toggle="collapse" data-parent="#accordion" href="#">
+           			<div class="subMenu">Descriptions and Videos <i class="fa fa-chevron-right pull-right"></i>      </div>
+        		</a>
+                <hr>
+                <a class="mainMenuList " data-toggle="collapse" data-parent="#accordion" href="#">
+           			<div class="subMenu">Syllabus Checklist<i class="fa fa-chevron-right pull-right"></i>      </div>
+        		</a>
+      		    </div>
+      		</div>
+    	</div>
+  	</div><!-- End Classes Main Menu Section -->
+
+    <!-- About Us Menu Section-->
+    	<div class=" mainMenuItems container">
+        		<a class="mainMenuList" data-toggle="collapse" data-parent="#accordion" href="#collapseAbout">
+        		    <hr />
+          			<h4>About Us <i class="fa fa-angle-double-right pull-right"></i></h4>
+        		</a>
+    	</div>
+    	<div id="collapseAbout" class="collapse">
+      <div class="panel-body menuListBg">
+       <div class="container">
+        		<a class="mainMenuList " data-toggle="collapse" data-parent="#accordion" href="#">
+           			<div class="subMenu">Who are we... <i class="fa fa-chevron-right pull-right"></i>      </div>
+        		</a>
+                <hr>
+                <a class="mainMenuList " data-toggle="collapse" data-parent="#accordion" href="#">
+           			<div class="subMenu">Salsa Synergy Dance Company<i class="fa fa-chevron-right pull-right"></i>      </div>
+        		</a>
+      		    </div>
+      </div>
+    </div>
+  
+  <!-- Contact Us Menu Section-->
+    	<div class=" mainMenuItems container">
+        		<a class="mainMenuList" href="contact_us.html">
+          			<hr />
+          			<h4>Contact Us <i class="fa fa-angle-double-right pull-right"></i></h4>
+        		</a>
+    	</div>
+  
+    <!-- Synergy Videos Menu Section-->
+    	<div class=" mainMenuItems container">
+        		<a class="mainMenuList" data-toggle="collapse" data-parent="#accordion" href="#collapseVideos">
+        		    <hr />
+          			<h4>Synergy Videos <i class="fa fa-angle-double-right pull-right"></i></h4>
+        		</a>
+    	</div>
+    	<div id="collapseVideos" class="collapse">
+      <div class="panel-body menuListBg">
+			 <div class="container">
+        		<a class="mainMenuList " data-toggle="collapse" data-parent="#accordion" href="#">
+           			<div class="subMenu">Class Videos and Moves <i class="fa fa-chevron-right pull-right"></i>      </div>
+        		</a>
+                <hr>
+                <a class="mainMenuList" data-toggle="collapse" data-parent="#accordion" href="#">
+           			<div class="subMenu">Dance Company Videos<i class="fa fa-chevron-right pull-right"></i>      </div>
+        		</a>
+      		    </div>
+      </div>
+    </div>
+  
+  
+</div>
+    <!-- Main Menu Finish -->
+
+
+
+        <!--<div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
-        </div>
+        </div>-->
+        <script src="js/bootstrap.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
+        
     </body>
 </html>
